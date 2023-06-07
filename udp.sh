@@ -5,7 +5,7 @@ clear
 IP=$(curl -s https://api.ipify.org)
 DOMAIN="https://jmgc-projects.store"
 SUB_DOMAIN=$(curl -sb -X POST $DOMAIN/api/server/domain -H "Content-Type: application/x-www-form-urlencoded" -d "&ip=$IP")
-API="$DOMAIN/api/my-panel/hysteria"
+API="$DOMAIN/api/hysteria"
 PORT=7777
 
 clear
