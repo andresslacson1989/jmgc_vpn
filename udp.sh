@@ -282,7 +282,7 @@ history -c
 rm /root/install_server.sh
 sleep 10
 curl -sb -X POST $DOMAIN/api/server/install -H "Content-Type: application/x-www-form-urlencoded" -d "status=Rebooting&ip=$IP"
-rm /root/install.sh
+rm /root/.bytesph2023bytesph
 reboot
 }
 
